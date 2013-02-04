@@ -1,6 +1,6 @@
 import javax.swing.*;
-
 public class TelaInicial {
+	
 	public static void main(String[] args) {
 		boolean iniciar=true;
 		while(iniciar ==true){
@@ -53,5 +53,14 @@ public class TelaInicial {
 		
 		}
 	}
-
+																																																																																																																																																																																																																																																																																													// com
+																																																																																																																																																																																																																																																																																															// pc
+																																																																																																																																																																																																																																																																																															// break;
+																																																																																																																																																																																																																																																																																															// default:
+																																																																																																																																																																																																																																																																																															// JOptionPane.showMessageDialog(null,"opção
+																																																																																																																																																																																																																																																																																															// inválida");
+																																																																																																																																																																																																																																																																																															// }
+																																																																																																																																																																																																																																																																																															// break;
+																																																																																																																																																																																																																																																																																															// default:
+																
 }

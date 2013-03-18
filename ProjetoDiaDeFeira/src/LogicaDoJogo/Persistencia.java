@@ -1,15 +1,14 @@
-package br.ufpb.poo;
-
+package LogicaDoJogo;
 import java.util.*;
 import java.io.*;
 	
 public class Persistencia {
 	
-	public List<Player> recuperaRanking () throws IOException {
+	public List<Jogador> recuperaRanking () throws IOException {
 		ObjectInputStream aux = null;
 		try{
 			aux = new ObjectInputStream(new FileInputStream("ranking.txt"));
-			return (List<Player>)aux.readObject();
+			return (List<Jogador>)aux.readObject();
 		}catch(FileNotFoundException exc){
 			throw new IOException("Arquivo não encontrado",exc);
 		}catch(ClassNotFoundException exc){
@@ -22,7 +21,7 @@ public class Persistencia {
 			}
 		}
 	}
-	public void gravaRanking(Collection<Player> players)throws IOException{
+	public void gravaRanking(Collection<Jogador> players)throws IOException{
 		ObjectOutputStream aux = null;
 		try{
 			aux = new ObjectOutputStream(new FileOutputStream(new File("ranking.txt")));
@@ -30,7 +29,6 @@ public class Persistencia {
 		}catch(FileNotFoundException exc){
 			throw new IOException("Arquivo não encontrado", exc);
 		}catch(IOException exc){
-			System.err.println();
 			throw exc;
 		}finally{
 			if(aux != null){
